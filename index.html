@@ -63,6 +63,14 @@
   </div>
  
   <audio id="background-music" src="mp3/cumpleaños.mp3" autoplay loop></audio>
-
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+   const backgroundMusic = document.getElementById("background-music");
+  backgroundMusic.volume = 0.3; 
+  backgroundMusic.play();
+  }, 3000);
+});
+ </script>
 </body>
 </html>
