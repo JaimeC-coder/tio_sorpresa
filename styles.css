@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.background {
+  background-image: url("img/img_fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  z-index: 1;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #7c7c7c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.profile-image_globos {
+  width: 350px;
+  height: 350px;
+  padding: 25px;
+ 
+  animation: updown 2s ease-in-out infinite;
+
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-title {
+  font-size: 48px;
+  color: #ff4500;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  animation: titleAnimation 2s ease-in-out infinite;
+}
+.animated-text{
+  font-size: 20px;
+  color: #4f1601;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  font-weight: 800;
+  animation: titleAnimation 2s ease-in-out infinite;
+}
+.animated-text-information{
+  font-size: 17px;
+  color: #000000;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  text-decoration: double;
+  text-transform: uppercase;
+  font-weight: 600;
+  animation: titleAnimation 2s ease-in-out infinite;
+}
+
+/* ... Agrega estilos adicionales para el contenido ... */
+
+.btn-rsvp {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn-rsvp-llegar {
+  background-color: #0c0a78;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rsvp:hover {
+  background-color: #cc3700;
+}
+
+/* Estilos para la ventana emergente */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.popup-content {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup label {
+  margin-top: 10px;
+}
+
+.popup input,
+.popup select,
+.popup button {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup button {
+  background-color: #ff4500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+  border: none;
+}
+
+.popup button:hover {
+  background-color: #cc3700;
+}
