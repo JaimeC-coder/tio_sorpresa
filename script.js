@@ -6,7 +6,7 @@ const additionalInfoTextarea = document.getElementById("additional-info");
 const backgroundMusic = document.getElementById("background-music");
 // const name = nameInput.value;
 // const number = numberInput.value;
-const volume = 0.03;
+const volume = 0.3;
 backgroundMusic.volume = volume;
 
 function openPopup() {
